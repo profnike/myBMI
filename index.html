@@ -21,11 +21,12 @@
         <div class="bmi-section-inner">
              <div class="first-inner-section">
             <div class="input-area">
-            <label for="">Weight</label>
-           <input class="bmi-input" placeholder="Weight in kilogram"  type="number"/>
-           <label for="">Height</label>
-           <input class="bmi-input" placeholder="height in meter"  type="number"/>
-        <button  id="calculate-bmi">Calculate</button>
+            <label for="">Weight (kg)</label>
+           <input class="bmi-input" id="weight" placeholder="Example 62"  type="number"  />
+           <label for="">Height (m)</label>
+           <input class="bmi-input" placeholder="Example 1.52" id="height" type="number"/>
+        <button  id="calculate-bmi" onclick="weightValue()">Calculate</button>
+        
         </div>
         <div class="bmi-result">
             <img src="./images/question.jpg"/>
