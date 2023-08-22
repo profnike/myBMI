@@ -2,3 +2,40 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.bmi-section{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bmi-section-inner{
+    /* border: 1px solid;
+    border-color: gold; */
+    background-color: white;
+    width: 90%;
+    height:85%;
+    padding: 20px;
+   
+}
+.bmi-input{
+border: 1px solid gold;
+width: 50%;
+height: 45px;
+padding: 10px;
+margin-bottom: 20px;
+margin-top: 10px;
+}
+.bmi-input:focus{
+    border: 1px solid gold;
+    outline: none;
+}
+.bmi-input:hover{
+    border: 2px solid gold;
+    outline: none;
+}
+.input-area{
+    display: flex;
+    flex-direction: column;
+}
