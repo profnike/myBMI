@@ -32,6 +32,12 @@
     border-radius: 10px;
     width: 30%;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+   
     /* align-self: center; */
     padding: 10px;
     box-shadow: 5px 10px ;

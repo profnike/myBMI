@@ -3,14 +3,18 @@ function weightValue() {
     let weight=document.getElementById("weight").value
     let height=document.getElementById("height").value
     let heightsquare=height*height
-    let val=document.getElementById("val")
+    let result=document.getElementById("bmi-result")
     let bmi=weight/heightsquare
-    console.log(bmi)
-    val.innerHTML="weight" + weight
-    // d = document.getElementById("select_id").value;
-    // alert(d);
+    let value= parseFloat(bmi.toFixed(1))
+    let comment=""
+
+    if(value<18.5){comment="This is underweight"}
+    else if(value==18.5 || value < 25.0){comment="This is a healthy weight"}
+    else if(value==25.0 || value < 30.0){comment="This is overweight"}
+    else {comment="This is obesity"}
+    result.innerHTML="Your BMI is" + " "+ value +"<br/>" + "<b>" + comment + "</b>"
+    
 }
-//weight.addEventListener('change', function() { console.log('You selected: ', weight.value);});
-//console.log(weight)
+
 
 
