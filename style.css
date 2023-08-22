@@ -67,7 +67,7 @@ margin-top: 10px;
     flex-direction: column;
     width: 50%;
 }
-#calculate-bmi{
+.input-area button{
     width: 100px;
     height: 40px;
     cursor: pointer;
@@ -78,11 +78,12 @@ margin-top: 10px;
     font: bold;
     color: gold;
 }
-#calculate-bmi:hover{
+.input-area button:hover{
     background-color: gold;
     color: black;
     outline: none;
 }
-#calculate-bmi:focus{
+.input-area button:focus{
     outline: none;
 }
+#reset-bmi{display: none;}
