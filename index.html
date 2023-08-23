@@ -19,18 +19,65 @@
     </section>
     <section class="bmi-section">
         <div class="bmi-section-inner">
+            <div class="input-warning" id="input-warning">
+                <button class="input-warning-cancel" onclick="cancelWarning()">x</button>
+                <p> Kindly fill the input area completely</p>
+               
+            </div>
              <div class="first-inner-section">
             <div class="input-area">
             <label for="">Weight (kg)</label>
-           <input class="bmi-input" id="weight" placeholder="Example 62"  type="number"  />
+           <input class="bmi-input" id="weight" placeholder="Example 62"  type="number" onfocus="inputValue()"  />
            <label for="">Height (m)</label>
-           <input class="bmi-input" placeholder="Example 1.52" id="height" type="number"/>
+           <input class="bmi-input" placeholder="Example 1.52" id="height" type="number" onfocus="inputValue()" />
         <button  id="calculate-bmi" onclick="weightValue()">Calculate</button>
         <button  id="reset-bmi" onclick="resetValue()">Reset</button>
         
         </div>
         <div class="bmi-result" id="bmi-result">
             <img src="./images/question.jpg"/>
+        </div>
+        </div>
+        <div class="bmi-divider">
+            <div class="round-shape"></div>
+            <hr class="line"/>
+            <div class="round-shape"></div>
+        </div>
+        <div class="second-inner-section">
+            <h2 >Unit Converter</h2>
+            <h3>Weight</h3>
+            <div class="weight-conversion-inner">
+            <div class="weight-conversion-inner-unit">
+                <label for="Ib">Ib</label>
+                <input class="bmi-input" type="text"/>
+            </div>
+            <p>to</p>
+            <div class="weight-conversion-inner-unit">
+                <label for="">Kilogram</label>
+                <input class="bmi-input" type="text"/>
+            </div>
+        </div>
+        <div class="weight-conversion-inner">
+            <div class="weight-conversion-inner-unit">
+                <label for="">Calories</label>
+                <input class="bmi-input" type="text"/>
+            </div>
+            <p>to</p>
+            <div class="weight-conversion-inner-unit">
+                <label for="">Kilogram</label>
+                <input class="bmi-input" type="text"/>
+            </div>
+        </div>
+        <div class="weight-conversion-inner">
+            <div class="weight-conversion-inner-unit">
+                <label for="">Pound</label>
+                <input class="bmi-input" type="text"/>
+            </div>
+            <p>to</p>
+            <div class="weight-conversion-inner-unit">
+                <label for="">Kilogram</label>
+                <input class="bmi-input" type="text"/>
+            </div>
         </div>
         </div>
         

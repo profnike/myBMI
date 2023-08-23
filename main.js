@@ -11,7 +11,10 @@ let bmi=weight/heightsquare
 let value= parseFloat(bmi.toFixed(1))
 let comment=""
    
-    if(weight=="" || height==""){console.log("empty value")}
+    if(weight=="" || height==""){
+        console.log("empty value")
+        document.getElementById("input-warning").style.display="flex"
+    }
     else if(value<18.5){
 
         result.innerHTML="Your BMI is" + " "+ value +"<br/>" + "<b>" + "This is underweight"
@@ -39,12 +42,22 @@ let comment=""
 
 function resetValue(){
     let result=document.getElementById("bmi-result")
-let calculate=document.getElementById("calculate-bmi")
-let reset=document.getElementById("reset-bmi")
+    let calculate=document.getElementById("calculate-bmi")
+    let reset=document.getElementById("reset-bmi")
     console.log('reset')
     result.innerHTML="<img src='./images/question.jpg'/>"
     reset.style.display="none"
     calculate.style.display="inline"
+    document.getElementById("weight").value=""
+    document.getElementById("height").value=""
+}
+function cancelWarning(){
+
+    document.getElementById("input-warning").style.display="none"
+}
+function inputValue(){
+
+    document.getElementById("input-warning").style.display="none"
 }
 
 
