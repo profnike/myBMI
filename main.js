@@ -60,5 +60,17 @@ function inputValue(){
     document.getElementById("input-warning").style.display="none"
 }
 
+function poundUnit (){
+   let pound= document.getElementById("poundValue").value*0.453592
+   let poundVal=parseFloat(pound.toFixed(2))
+   document.getElementById("kgpoundValue").value= poundVal
+   
+}
+function gramUnit (){
+    let gram= document.getElementById("gramValue").value*0.001
+    let gramVal=parseFloat(gram.toFixed(2))
+    document.getElementById("kggramValue").value=gramVal
+    
+ }
 
 
