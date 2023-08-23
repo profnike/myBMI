@@ -2,3 +2,15 @@
     margin: 0px;
     box-sizing: border-box;
 }
+/* Style for Homepage */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.70), rgba(4, 9, 30, 0.70)), url(./BMI\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header img{
+    width: 180px;
+}
