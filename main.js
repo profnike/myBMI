@@ -1,5 +1,4 @@
-
-
+// BMI CALCULATION START
 function weightValue() {
     let weight=document.getElementById("weight").value
 let height=document.getElementById("height").value
@@ -51,26 +50,57 @@ function resetValue(){
     document.getElementById("weight").value=""
     document.getElementById("height").value=""
 }
+//cancel  input incomplete notification
 function cancelWarning(){
 
     document.getElementById("input-warning").style.display="none"
 }
+//  input incomplete notification
 function inputValue(){
 
     document.getElementById("input-warning").style.display="none"
 }
 
+//  To convert pound to kilogram
 function poundUnit (){
-   let pound= document.getElementById("poundValue").value*0.453592
+    let poundInput=document.getElementById("poundValue").value
+   let pound= poundInput*0.453592
+  
    let poundVal=parseFloat(pound.toFixed(2))
-   document.getElementById("kgpoundValue").value= poundVal
+   if(poundInput.length!==0){document.getElementById("kgpoundValue").value= poundVal}
+   else{document.getElementById("kgpoundValue").value= ""}
    
 }
+//  To convert gram to kilogram
 function gramUnit (){
+    let gramInput=document.getElementById("gramValue").value
     let gram= document.getElementById("gramValue").value*0.001
     let gramVal=parseFloat(gram.toFixed(2))
-    document.getElementById("kggramValue").value=gramVal
+   
+    if(gramInput.length!==0){document.getElementById("kggramValue").value= gramVal}
+   else{document.getElementById("kggramValue").value= ""}
     
  }
+ //  To convert feet to meter
+ function feetUnit (){
+    let feetInput=document.getElementById("feetValue").value
+    let feet= feetInput*0.3048
+    let feetVal=parseFloat(feet.toFixed(2))
+   
+    if(poundInput.length!==0){document.getElementById("meterfeetValue").value= feetVal}
+   else{document.getElementById("meterfeetValue").value= ""}
+    
+ }
+//  To convert inches to meter
+ function inchesUnit (){
+    let inchesInput= document.getElementById("feetValue").value
+    let inches= inchesInput*0.0254
+    let inchesVal=parseFloat(inches.toFixed(2))
+   
+    if(inchesInput.length!==0){document.getElementById("meterinchesValue").value= inchesVal}
+   else{document.getElementById("meterinchesValue").value= ""}
+    
+ }
+//  BMI CALCULATION ENDS
 
 
