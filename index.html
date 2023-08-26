@@ -53,7 +53,7 @@
         
         </div>
         <div class="bmi-result" id="bmi-result">
-            <img src="./images/question.jpg"/>
+            <img src="./images/question-mark.png"/>
         </div>
         </div>
         <div class="bmi-divider">
@@ -66,59 +66,70 @@
             <h3>Weight</h3>
             <div class="weight-conversion-inner">
             <div class="weight-conversion-inner-unit">
-                <label for="">Pounds</label>
-                <input class="bmi-input" id="poundValue" type="text" oninput="poundUnit()"/>
+                <label for="poundValue">Pounds</label>
+                <input class="bmi-input" id="poundValue" type="number" oninput="poundUnit()"/>
             </div>
-            <p>to</p>
+            <div class="arrow-image">
+            <img src="./images/arrow-right.jpg"/>
+            </div>
+            <!-- <p>to</p> -->
             <div class="weight-conversion-inner-unit">
-                <label for="">Kilogram</label>
-                <input class="bmi-input" id="kgpoundValue" type="text"/>
+                <p>Kilogram</p>
+                <div class="bmi-input-result" id="kgpoundValue" ></div>
             </div>
         </div>
         <div class="weight-conversion-inner">
             <div class="weight-conversion-inner-unit">
-                <label for="">Gram</label>
-                <input class="bmi-input" id="gramValue" oninput="gramUnit()" type="text"/>
+                <label for="gramValue">Gram</label>
+                <input class="bmi-input" id="gramValue" oninput="gramUnit()" type="number"/>
             </div>
-            <p>to</p>
+            <div class="arrow-image">
+                <img src="./images/arrow-right.jpg"/>
+                </div>
             <div class="weight-conversion-inner-unit">
-                <label for="">Kilogram</label>
-                <input class="bmi-input" id="kggramValue"  type="text"/>
+                <p>Kilogram</p>
+                <div class="bmi-input-result" id="kggramValue"  ></div>
             </div>
         </div>
         
         <h3>Height</h3>
         <div class="weight-conversion-inner">
             <div class="weight-conversion-inner-unit">
-                <label for="">Feet</label>
-                <input class="bmi-input" id="feetValue" type="text" oninput="feetUnit()"/>
+                <label for="feetValue">Feet</label>
+                <input class="bmi-input" id="feetValue" type="number" oninput="feetUnit()"/>
             </div>
-            <p>to</p>
+            <div class="arrow-image">
+                <img src="./images/arrow-right.jpg"/>
+                </div>
             <div class="weight-conversion-inner-unit">
-                <label for="">Meter</label>
-                <input class="bmi-input" id="meterfeetValue" type="text"/>
-            </div>
-        </div>
-        <div class="weight-conversion-inner">
-            <div class="weight-conversion-inner-unit">
-                <label for="">Inches</label>
-                <input class="bmi-input" id="inchesValue" oninput="inchesUnit()" type="text"/>
-            </div>
-            <p>to</p>
-            <div class="weight-conversion-inner-unit">
-                <label for="">Meter</label>
-                <input class="bmi-input" id="meterinchesValue"  type="text"/>
+                <p>Meter</p>
+                <div class="bmi-input-result" id="meterfeetValue" ></div>
             </div>
         </div>
         <div class="weight-conversion-inner">
             <div class="weight-conversion-inner-unit">
-                <label for="">Centimeter</label>
-                <input class="bmi-input" id="centimeterValue" oninput="gramUnit()" type="text"/>
+                <label for="inchesValue">Inches</label>
+                <input class="bmi-input" id="inchesValue" oninput="inchesUnit()" type="number"/>
             </div>
-            <p>to</p>
+            <div class="arrow-image">
+                <img src="./images/arrow-right.jpg"/>
+                </div>
             <div class="weight-conversion-inner-unit">
-                <label for="metercentimeterValue">Meter</label>
-                <input class="bmi-input" id="metercentimeterValue"  type="text"/>
+                <p>Meter</p>
+                <div class="bmi-input-result" id="meterinchesValue"  ></div>
+            </div>
+        </div>
+        <div class="weight-conversion-inner">
+            <div class="weight-conversion-inner-unit">
+                <label for="centimeterValue">Centimeter</label>
+                <input class="bmi-input" id="centimeterValue" oninput="gramUnit()" type="number"/>
+            </div>
+            <div class="arrow-image">
+                <img src="./images/arrow-right.jpg"/>
+                </div>
+            <div class="weight-conversion-inner-unit">
+                <p >Meter</p>
+                <div class="bmi-input-result" id="metercentimeterValue"  ></div>
             </div>
         </div>
     </div>
