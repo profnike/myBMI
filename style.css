@@ -201,6 +201,7 @@ text-align: center;
     }
     .first-inner-section{
         flex-direction: column;
+        
     }
     .input-area{
         width: 100%;
@@ -208,6 +209,11 @@ text-align: center;
     .bmi-result{
         align-self: center;
         margin-top: 30px;
+    }
+    .bmi-result{
+        width: 70%;
+        align-self: center;
+        margin-right: 0;
     }
    
 }
@@ -217,7 +223,7 @@ text-align: center;
 /* Style for Homepage */
 .container{
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.70), rgba(4, 9, 30, 0.70)), url(./BMI\ 3.jpg);
     background-position: center;
     background-size: cover;
