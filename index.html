@@ -36,16 +36,18 @@
     </section>
     <section class="bmi-section">
         <div class="bmi-section-inner">
+            <h2 >BMI Calculator</h2>
             <div class="input-warning" id="input-warning">
                 <button class="input-warning-cancel" onclick="cancelWarning()">x</button>
                 <p> Incomplete input area </p>
                
             </div>
-            <h2 >BMI Calculator</h2>
+           
              <div class="first-inner-section">  
             <div class="input-area">
             <label for="">Weight (kg)</label>
-           <input class="bmi-input" id="weight" placeholder="Example 62"  type="number" onfocus="inputValue()"  />
+           <input class="bmi-input" id="weight" placeholder="Example 62"  type="number" onfocus="inputValue()"   />
+           <!-- <div class="bmi-input" id="weight" placeholder="Example 62"  type="number" onfocus="inputValue()" ></div> -->
            <label for="">Height (m)</label>
            <input class="bmi-input" placeholder="Example 1.52" id="height" type="number" onfocus="inputValue()" />
         <button  id="calculate-bmi" onclick="weightValue()">Calculate</button>
@@ -53,7 +55,7 @@
         
         </div>
         <div class="bmi-result" id="bmi-result">
-            <img src="./images/question-mark.png"/>
+            <img src="./images/question-img.jpg"/>
         </div>
         </div>
         <div class="bmi-divider">
@@ -122,7 +124,7 @@
         <div class="weight-conversion-inner">
             <div class="weight-conversion-inner-unit">
                 <label for="centimeterValue">Centimeter</label>
-                <input class="bmi-input" id="centimeterValue" oninput="gramUnit()" type="number"/>
+                <input class="bmi-input" id="centimeterValue" oninput="centimeterUnit()" type="number"/>
             </div>
             <div class="arrow-image">
                 <img src="./images/arrow-right.jpg"/>
