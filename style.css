@@ -442,7 +442,68 @@ nav ul li a{
         height: inherit;
     }
 }
+/* Footer */
+footer{
+    margin-top: 195px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #334d4d;
+    color: #efefef;
+    display: flex;
+}
 
+footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 2;
+    text-transform: uppercase;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom: 20px;
+}
+
+footer div h3{
+    font-weight: 300;
+    margin-bottom:25px ;
+    letter-spacing: 1px;
+}
+
+form input{
+    width: 400px;
+    height:40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icon{
+    margin-top: 30px;
+}
+
+.social-icon i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
 @media screen and (max-width: 700px){
     .bmi_section{
         display: block;
