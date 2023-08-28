@@ -8,6 +8,24 @@
 .newsletter{
     height: 200px;
     background-color: #334d4d;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-inner{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.newsletter h2{
+    margin-bottom: 15px;
+    font-size: 40px;
 }
 
 /* NEWSLETTER ENDS*/
