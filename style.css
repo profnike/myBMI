@@ -306,9 +306,8 @@ nav ul li a{
 /* BMI Info */
 #bmi_contect{
    display: block;
-   /* display: flex; */
-   justify-content: center;
-   /* justify-content: space-between; */
+   /* justify-content: center; */
+   justify-content: space-between;
    margin: 0 auto;
    margin-top: 50px;
    width: 90%;
@@ -324,10 +323,11 @@ nav ul li a{
 .text-decor{
     position: relative;
     text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
     /* padding-bottom: 20px;
     margin-bottom: 20px; */
-    padding-bottom: 0px;
-    margin-bottom: 20px;
+  
 }
 
 .text-decor span{
@@ -342,7 +342,7 @@ nav ul li a{
     transform: translate(-50%);
     width: 45px;
     height: 4px;
-    /* background-color: #D74826; */
+    background-color: #D74826;
 }
 
 .bmi_section{
@@ -387,9 +387,8 @@ nav ul li a{
 }
 
 @media only screen and (max-width: 1024px){
-    .text-decor{
-        padding-bottom: 0px;
-        margin-bottom:1 0px;
+    #bmi_contect #second-bmi_section{
+        flex-direction: column-reverse;
     }
     
     .bmi_section{
