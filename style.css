@@ -3,22 +3,23 @@
     margin: 0px;
     box-sizing: border-box;
 }
-/* BMI CALCULATION STARTS*/
+/* NEWSLETTER STARTS*/
+
 .newsletter{
     height: 200px;
     background-color: #334d4d;
 }
+
+/* NEWSLETTER ENDS*/
+/* BMI CALCULATION STARTS*/
+
 .bmi-section{
-    /* background-color: #c2d6d6; */
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .bmi-section-inner{
-    /* border: 1px solid;
-    border-color: gold; */
     margin: 50px 0px;
     background-color: white;
     width: 90%;
@@ -47,8 +48,6 @@
     line-height: 50px;
     margin-right: 5rem;
     margin-top: 10px;
-   
-    /* align-self: center; */
     padding: 10px;
     box-shadow: 5px 10px #334d4d;
 }
@@ -230,7 +229,7 @@ text-align: center;
 /* Style for Homepage */
 .container{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.70), rgba(4, 9, 30, 0.70)), url(./BMI\ 3.jpg);
     background-position: center;
     background-size: cover;
@@ -325,7 +324,9 @@ nav ul li a{
 .text-decor{
     position: relative;
     text-align: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px;
+    margin-bottom: 20px; */
+    padding-bottom: 0px;
     margin-bottom: 20px;
 }
 
@@ -341,14 +342,18 @@ nav ul li a{
     transform: translate(-50%);
     width: 45px;
     height: 4px;
-    background-color: #D74826;
+    /* background-color: #D74826; */
 }
 
 .bmi_section{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     margin: 50px 10px;
+    margin: 20px 10px;
+    
+    /* background-color: blue; */
 }
 
 .bmi_text{
@@ -360,6 +365,7 @@ nav ul li a{
     color: #999;
     bottom: 15px;
     left: 15px;
+    width: 48%;
 }
 
 .bmi_text p{
@@ -369,8 +375,52 @@ nav ul li a{
 .bmi_img {
     position: relative;
     padding-bottom: 15px;
+    align-self: center;
+    
+    width: 48%;
+}
+.bmi_img{
+    width: 48%;
+}
+.bmi_img img{
+    width: 100%;
 }
 
+@media only screen and (max-width: 1024px){
+    .text-decor{
+        padding-bottom: 0px;
+        margin-bottom:1 0px;
+    }
+    
+    .bmi_section{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .bmi_text {
+       width: 100%;
+       margin-top: 0;
+    }
+    .bmi_img {
+        width: 100%;
+     }
+     .bmi_img img{
+       max-width: 100% ;
+     }
+     #bmi_contect{
+        margin: 0 auto;
+        margin-top: 20px;
+       
+     }
+     .bmi_img{
+        width: 100%;
+    }
+    .bmi_text{
+        width: 100%;
+    }
+     
+
+
+}
 @media screen and (max-width: 400px){
     .bmi_section{
         display: block;
@@ -395,12 +445,20 @@ nav ul li a{
         width: 400px !important;
         height: inherit;
     }
+
+    /* .bmi_img{
+        width: 100%;
+    }
+    .bmi_text{
+        width: 100%;
+    } */
 }
 
 @media screen and (max-width: 500px){
     .bmi_section{
         display: block;
         justify-content: center;
+        
     }
 
     .bmi_header h2{
@@ -418,7 +476,7 @@ nav ul li a{
     }
 
     .bmi_img img{
-        width: 450px !important;
+        /* width: 450px !important; */
         height: inherit;
     }
 }
@@ -444,19 +502,25 @@ nav ul li a{
     }
 
     .bmi_img img{
-        width: 500px!important;
+        /* width: 500px!important; */
         height: inherit;
     }
 }
 /* Footer */
-footer{
-    /* margin-top: 195px; */
-    margin-top: 40px;
+.footer-outer{
     width: 100%;
-    padding: 100px 15%;
+   margin: 0 auto;
     background: #334d4d;
     color: #efefef;
     display: flex;
+    justify-content: center;
+}
+footer{
+    /* margin-top: 195px; */
+    margin-top: 20px;
+    padding: 50px 0;
+    display: flex;
+    width: 90%;
 }
 
 footer div{
@@ -558,7 +622,7 @@ form button{
     }
 
     .bmi_img img{
-        width: 700px !important;
+        /* width: 700px !important; */
         height: inherit;
     }
 }
@@ -584,7 +648,7 @@ form button{
     }
 
     .bmi_img img{
-        width: 750px !important;
+        /* width: 750px !important; */
         height: inherit;
     }
 }
