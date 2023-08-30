@@ -121,12 +121,24 @@ function gramUnit (){
  }
 //  BMI CALCULATION ENDS
 //Navbar starts
+window.onresize = function() {
+    if(window.innerWidth>700){
+        document.getElementById("mobileNav").style.display="none"
+        document.getElementById("bars").style.display="none"
+    }
+   else{document.getElementById("bars").style.display="inline"}
+};
 var navLinks = document.getElementById("navLinks");
 function showMenu() {
-    navLinks.style.right = "0";
+    // navLinks.style.right = "0";
+    document.getElementById("bars").style.display="none"
+     document.getElementById("mobileNav").style.display="inline"
+    
 }
 function hideMenu() {
-    navLinks.style.right = "-200px"
+    // navLinks.style.right = "-200px"
+        document.getElementById("mobileNav").style.display="none"
+        document.getElementById("bars").style.display="inline"
 }
 //Navbar Ends
 

@@ -301,6 +301,8 @@ text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 2rem;
+    align-self: center;
+    
 }
 /* Nav Bar */
 nav{
@@ -325,7 +327,7 @@ nav ul li::after{
     background: #ffffff;
     display: block;
     margin: auto;
-    transition: 0.5;
+    transition: 0.5s;
 }
 nav ul li:hover::after{
     width: 100%;
@@ -368,6 +370,25 @@ nav ul li:hover::after{
     color: #ccc;
 }
 
+#bars{
+    display: none;
+    
+    }
+.header{
+    background-color: #334d4d;
+   align-items: center;
+}
+
+#mobileNav{
+    display: none ;
+    padding: 10px 0px;
+    background-color: #436363;
+    
+}
+#cancelNav{
+    float: right;
+    margin-right: 10px;
+}
 /* Responsiveness for homepage */
 @media (max-width:700px) {
     nav ul li{
@@ -386,14 +407,24 @@ nav ul li:hover::after{
         padding: 10px;
     }
     .header h1{
-        font-size: 2.5rem;
-        margin-top: 30px;
+        font-size: 2.0rem;
+        /* font-size: 2.5rem; */
+        /* margin-top: 30px; */
     }
     .header, nav .fa {
         color: #ffffff;
         font-size: 22px;
         cursor: pointer;    
     }
+   
+    #bars{
+        display: inline ;
+    }
+   
+    #navLinks{
+        display: none;
+    }
+    
     
 }
 
