@@ -590,8 +590,8 @@ footer div h3 {
 }
 
 form input {
-    width: 100%; /* Make the input full-width */
-    max-width: 400px; /* Limit the maximum width */
+    width: 100%; 
+    max-width: 400px; 
     height: 40px;
     border-radius: 10px;
     text-align: center;
@@ -624,25 +624,23 @@ form button {
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     footer {
-        flex-direction: column; /* Stack columns vertically */
-        align-items: center; /* Center align content */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     footer div {
-        padding: 20px 0; /* Adjust spacing for smaller screens */
+        padding: 20px 0; 
     }
 
     form input {
-        max-width: 100%; /* Allow input to take full width */
-    }
+        max-width: 100%; 
 
     form button {
-        width: 100%; /* Make button full width */
+        width: 100%; 
     }
 }
 
-/* Additional media queries for smaller screen sizes if needed */
-/* You can add more media queries as needed */
+
 
 @media screen and (max-width: 700px){
     .bmi_section{
