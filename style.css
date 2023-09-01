@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /* Nav Bar */
 
 
 
 
-
-
-
-
 /* BMI Info */
+strong{
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 #bmi_contect{
    display: block;
    justify-content: center;
@@ -36,7 +42,7 @@
 }
 
 .text-decor span{
-    color: #D74826;
+    color: #334d4d;
 }
 
 .text-decor ::before{
@@ -47,7 +53,7 @@
     transform: translate(-50%);
     width: 45px;
     height: 4px;
-    background-color: #D74826;
+    background-color: #334d4d;
 }
 
 .bmi_section{
@@ -60,8 +66,7 @@
 .bmi_text{
     padding-top: 10px;
     font-size: 20px;
-    text-align: start;
-    /* font-style: italic; */
+    text-justify: distribute-all-lines;
     color: #999;
     bottom: 15px;
     left: 15px;
@@ -97,7 +102,8 @@
     }
 
     .bmi_img img{
-        width: 400px !important;
+        margin-top: 30px;
+        max-width: 380px;
         height: inherit;
     }
 }
@@ -123,7 +129,8 @@
     }
 
     .bmi_img img{
-        width: 450px !important;
+        margin-top: 30px;
+        max-width: 480px;
         height: inherit;
     }
 }
@@ -149,7 +156,8 @@
     }
 
     .bmi_img img{
-        width: 500px!important;
+        margin-top: 30px;
+        max-width: 580px;
         height: inherit;
     }
 }
@@ -174,10 +182,11 @@
         font-weight: 500;
     }
 
-    /* .bmi_img img{
-        width: 550px !important;
+    .bmi_img img{
+        margin-top: 30px;
+        max-width: 680px;
         height: inherit;
-    } */
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -201,7 +210,8 @@
     }
 
     .bmi_img img{
-        width: 700px !important;
+        margin-top: 30px;
+        max-width: 780px;
         height: inherit;
     }
 }
@@ -227,7 +237,8 @@
     }
 
     .bmi_img img{
-        width: 750px !important;
+        margin-top: 30px;
+        max-width: 100%;
         height: inherit;
     }
 }
