@@ -414,7 +414,13 @@ nav ul li:hover::after{
     .header, nav .fa {
         color: #ffffff;
         font-size: 22px;
-        cursor: pointer;    
+        cursor: pointer; 
+          
+    }
+   
+    #cancelNav:hover{
+       
+       font-size: 24px;
     }
    
     #bars{
