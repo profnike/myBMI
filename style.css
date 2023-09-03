@@ -22,13 +22,15 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 30px 0;
+   
     
 }
 .newsletter input{
     padding: 10px;
     width: 80%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #334d4d;
 }
 .newsletter input:focus{
@@ -41,18 +43,24 @@
     border: 2px solid #669999;
 }
 .newsletter button{
-    width: 120px;
-    border-radius: 16px;
+    width: 160px;
+    border-radius: 30px;
     height: 40px;
     margin:30px 0px;
     cursor: pointer;
     border: 1px solid #334d4d;
     background-color: white;
+    background-color: #669999;
+    color: white;
+
 }
 .newsletter button:hover{
     background-color: #669999;
-    width: 125px;
+    width: 170px;
     color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.41s;
 }
 .newsletter h2{
     margin: 30px 0px;
@@ -84,7 +92,6 @@
     background-color: white;
     width: 90%;
     height:85%;
-    padding: 20px;
     padding-top: 0;
     
    
@@ -191,6 +198,7 @@ padding: 10px;
 display: none;
 flex-direction: column;
 text-align: center;
+margin-bottom: 40px;
 
 }
 
@@ -231,7 +239,7 @@ text-align: center;
     text-align: center;
     margin-bottom: 20px;
     color: #334d4d;
-    font-size: 25px;
+    font-size: 30px;
     
 }
 .bmi-section label,  .bmi-section p{ 
@@ -257,7 +265,11 @@ text-align: center;
         width:100%;   
         
     }
-.weight-conversion-inner{
+    .bmi-section h2{
+        font-size: 25px;
+        
+    }
+    .weight-conversion-inner{
     flex-direction: column;
     }
     .first-inner-section{
@@ -281,7 +293,7 @@ text-align: center;
 /* BMI CALCULATION ENDS*/
 
 body{
-    overflow-x: hidden;
+    font-family: 'DM Sans', sans-serif;
 }
 
 
@@ -289,7 +301,7 @@ body{
 .container{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.70), rgba(4, 9, 30, 0.70)), url(./BMI\ 3.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.70), rgba(4, 9, 30, 0.70)), url(./images/BMI\ 3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -365,6 +377,7 @@ nav ul li:hover::after{
     background-color: #334d4d;
     color: whitesmoke;
     cursor: pointer;
+    /* width: 160px;  */
 
 }
 .con-btn:hover{
@@ -392,6 +405,7 @@ nav ul li:hover::after{
 #cancelNav{
     float: right;
     margin-right: 10px;
+    
 }
 /* Responsiveness for homepage */
 @media (max-width:700px) {
@@ -409,6 +423,7 @@ nav ul li:hover::after{
     }
     nav ul{
         padding: 10px;
+      
     }
     .header h1{
         font-size: 2.0rem;
@@ -421,6 +436,12 @@ nav ul li:hover::after{
         cursor: pointer; 
           
     }
+    .cancel-button{
+        margin-bottom: 10px;
+    }
+    #cancelNav{
+       margin-bottom: 0px;
+     }
    
     #cancelNav:hover{
        
@@ -449,15 +470,22 @@ strong{
    display: block;
    justify-content: center;
    margin: 0 auto;
-   margin-top: 50px;
+   margin-top: 40px;
    width: 90%;
 }
 
 .bmi_header{
     text-align: center;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: red;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: 500;
+}
+.bmi_header h2{
+    font-size: 30px;
+}
+.bmi_text h2{
+    font-size: 30px;
 }
 
 .text-decor{
@@ -488,29 +516,26 @@ strong{
 .bmi_section{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     justify-content: space-between;
-    margin: 50px 10px;
-    margin: 40px 10px;
+    /* margin: 40px 10px; */
     
 }
 
 .bmi_text{
     padding-top: 10px;
     font-size: 20px;
-    text-justify: distribute-all-lines;
-    color: #999;
-    text-align: start;
+    /* color: #999; */
     text-align: justify;
-    /* font-style: italic; */
-    color: #333;
+    /* color: #333; */
+    color: #334d4d;
     bottom: 15px;
     left: 15px;
     width: 48%;
 }
 
+
 .bmi_text p{
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .bmi_img {
@@ -526,41 +551,11 @@ strong{
 .bmi_img img{
     width: 100%;
 }
-
-@media only screen and (max-width: 1024px){
-    #bmi_contect #second-bmi_section{
-        flex-direction: column-reverse;
-    }
-    
-    .bmi_section{
-        margin-top: 0;
-        flex-direction: column;
-    }
-    .bmi_text {
-       width: 100%;
-       margin-top: 0;
-    }
-    .bmi_img {
-        width: 100%;
-     }
-     .bmi_img img{
-       max-width: 100% ;
-     }
-     #bmi_contect{
-        margin: 0 auto;
-        margin-top: 20px;
-       
-     }
-     .bmi_img{
-        width: 100%;
-    }
-    .bmi_text{
-        width: 100%;
-    }
-     
-
-
+#bmi_contect #second-bmi_section{
+    flex-direction:row-reverse;
 }
+
+
 @media screen and (max-width: 400px){
     .bmi_section{
         display: block;
@@ -570,24 +565,21 @@ strong{
     .bmi_header h2{
         text-align: center;
         font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
-<<<<<<< HEAD
         margin-top: 30px;
         max-width: 380px;
-=======
         /* width: 400px !important; */
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
         height: inherit;
     }
 
@@ -603,15 +595,15 @@ strong{
     .bmi_header h2{
         text-align: center;
         font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
@@ -631,15 +623,15 @@ strong{
     .bmi_header h2{
         text-align: center;
         font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
@@ -649,96 +641,6 @@ strong{
         height: inherit;
     }
 }
-
-/* Footer */
-.footer-outer {
-    width: 100%;
-    margin: 0 auto;
-    background: #334d4d;
-    color: #efefef;
-    display: flex;
-    justify-content: center;
-}
-
-footer {
-    margin-top: 20px;
-    padding: 50px 0;
-    display: flex;
-    width: 90%;
-}
-
-footer div {
-    text-align: center;
-    flex: 2; 
-    padding: 0 20px; 
-}
-
-.col-1 a {
-    display: block;
-    text-decoration: none;
-    color: #efefef;
-    margin-bottom: 20px;
-}
-
-footer div h3 {
-    font-weight: 300;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
-
-form input {
-    width: 100%; 
-    max-width: 400px; 
-    height: 40px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    outline: none;
-    border: none;
-}
-
-form button {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.social-icon {
-    margin-top: 30px;
-}
-
-.social-icon i {
-    font-size: 22px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column; 
-        align-items: center; 
-    }
-    
-    footer div {
-        padding: 20px 0; 
-    }
-
-    form input {
-        max-width: 100%; 
-
-    form button {
-        width: 100%; 
-    }
-}
-
-
-
 @media screen and (max-width: 700px){
     .bmi_section{
         display: block;
@@ -748,15 +650,15 @@ form button {
     .bmi_header h2{
         text-align: center;
         font-size: 25px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 25px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
@@ -765,7 +667,6 @@ form button {
         height: inherit;
     }
 }
-
 @media screen and (max-width: 800px){
     .bmi_section{
         display: block;
@@ -775,15 +676,15 @@ form button {
     .bmi_header h2{
         text-align: center;
         font-size: 28px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 28px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
@@ -803,15 +704,15 @@ form button {
     .bmi_header h2{
         text-align: center;
         font-size: 30px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_text h2{
         text-align: center;
         font-size: 30px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 500;
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-weight: 500; */
     }
 
     .bmi_img img{
@@ -821,4 +722,195 @@ form button {
         height: inherit;
     }
 }
+
+@media only screen and (max-width: 1024px){
+    
+    .bmi_section{
+        margin-top: 0;
+        flex-direction: column;
+    }
+     #bmi_contect #second-bmi_section{
+        flex-direction: column;
+    }
+    
+    
+    
+    .bmi_text {
+       width: 100%;
+       margin-top: 0;
+       padding-top: 0;
+    }
+    .bmi_img {
+        width: 100%;
+     }
+     .bmi_img img{
+       max-width: 100% ;
+     }
+     #bmi_contect{
+        margin: 0 auto;
+        margin-top: 20px;
+       
+     }
+     .bmi_img{
+        width: 100%;
+    }
+    .bmi_text{
+        width: 100%;
+    }
+    .bmi_header h2{
+        font-size: 25px;
+    }
+
+
 }
+/* bmi-info ends */
+
+/* Footer */
+.footer-outer {
+    width: 100%;
+    margin: 0 auto;
+    background: #334d4d;
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 20px 0px;
+    padding: 50px 0;
+    display: flex;
+    width: 90%;
+   
+}
+
+footer div {
+    text-align: center;
+    flex: 2; 
+    padding: 0 20px; 
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+    
+}
+.col-1 a:hover {
+    display: block;
+    text-decoration: none;
+    color: #669999;
+    font-size: 17px;
+}
+
+
+footer div h3 {
+    /* font-weight: 300; */
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%; 
+    max-width: 400px; 
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+}
+form input:hover{
+    border: 3px solid #436363;
+    outline: none;
+}
+form input:focus{
+    border: 3px solid #436363;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    background-color: #669999;
+    /* border: 2px solid #fff; */
+    border: 1px solid #669999;
+    width: 160px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#envelope:hover{
+    color: #669999;
+}
+#phone:hover{
+    color: #669999;
+}
+#github:hover{
+    color: #669999;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    footer .col-1, footer .col-2, footer .col-3 {
+        padding: 20px 0; 
+    }
+
+    form input {
+        max-width: 100%; 
+    }
+
+    form button {
+        width: 100%; 
+    }
+    .social-icon i {
+        margin-top: 0px;
+    }
+    .social-icon {
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding: 0px;
+    }
+    footer .col-3 p{
+        margin: 15px;
+    }
+    .col-1 a {
+        margin-top: 15px;
+    }
+    footer div h3 {
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    footer{
+        margin-top: 0px;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+/* footer ends */

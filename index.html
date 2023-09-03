@@ -10,7 +10,13 @@
     sizes="64x64"
     href="./images/bmi.png"
   />
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/11e1fca62a.js" crossorigin="anonymous"></script>
     <title>myBMI</title>
 </head>
@@ -52,12 +58,12 @@
     <!-- BMI Info Start -->
     <section id="bmi_contect">
         <div class="bmi_header">
-            <h2 class="text-decor"><span>INTRODUTION TO BMI (Body Mass Index)</span></h2>
+            <h2 class="text-decor"><span>INTRODUCTION TO BMI (Body Mass Index)</span></h2>
         </div>
-        <div class="bmi_section">
+        <div class="bmi_section" id="first-bmi_section">
             <div class="bmi_text">
                 
-                <p>Introduction: BMI stands for Body Mass Index. It's a numerical value calculated using a person's weight and height, often used to assess whether someone is underweight, normal weight, overweight, or obese. However, it's important to note that BMI doesn't directly measure body fat and doesn't consider factors like muscle mass, bone density, and distribution of fat. It's a simple tool, but its limitations have led to criticism in recent years.
+                <p><b>Introduction:</b> BMI stands for Body Mass Index. It's a numerical value calculated using a person's weight and height, often used to assess whether someone is underweight, normal weight, overweight, or obese. However, it's important to note that BMI doesn't directly measure body fat and doesn't consider factors like muscle mass, bone density, and distribution of fat. It's a simple tool, but its limitations have led to criticism in recent years.
                     
                     <br>
                      BMI or Body Mass Index, is also a numerical value used to assess the relationship between a person's weight and height. It's a common tool for gauging whether an individual's weight falls within a healthy range.
@@ -74,42 +80,49 @@
                 </p>
             </div>
             <div class="bmi_img">
-                <img class="bmi-images" src="img/bmi1.jpg"  alt="">
+                <img class="bmi-images" src="images/bmi1.jpg"  alt="">
             </div>
         </div>
 
         <div class="bmi_section" id="second-bmi_section">
-            <div class="bmi_img">
-                <img src="img/bmi2.jpg" alt="">
-            </div>
+            
             <div class="bmi_text">
-                <h2 class="text-decor"><span>Understanding BMI (Body Mass Index)</span></h2>
-                <p> Understanding BMI (Body Mass Index)
+                <h2 class="text-decor"><span>UNDERSTANDING BMI (Body Mass Index)</span></h2>
+                <!-- <p> Understanding BMI (Body Mass Index)
                     <br>
-                    <br>
-
-                    Calculation: BMI is calculated using the formula: BMI = (weight in kilograms) / (height in meters) 
+                    <br> -->
+                    <p>
+                    <b>Calculation:</b> BMI is calculated using the formula: BMI = (weight in kilograms) / (height in meters) 
                     The result is expressed in kg/m^2.
-                    <br>
-                        
-                    Interpretation:Underweight: BMI less than 18.5
-                        Normal weight: BMI 18.5 - 24.9
-                        Overweight: BMI 25 - 29.9Obese: BMI 30 or greaterLimitations:
-                        <br>
-
-                    
-                    While BMI is a widely used tool, it has limitations. It doesn't consider factors like muscle mass, bone density, and distribution of fat, which can vary among individuals. Therefore, it may not accurately reflect the health status of athletes, elderly people, or those with a muscular build.
-                    
-                    <br>
-                    Usefulness: BMI is useful for quickly identifying potential weight-related health risks. However, it's important to complement this assessment with other indicators, such as waist circumference and overall health evaluations, to get a more complete picture of an individual's well-being.
-                    
-                    <br>
-
-                    Conclusion: BMI provides a simple way to estimate whether an individual's weight is within a healthy range based on their height. While it has its limitations, it's a useful tool when used in conjunction with other health assessments to make informed decisions about lifestyle and wellness.
                 </p>
+                    <p>  
+                   <b> Interpretation:</b> <br>
+                   <ul>
+                  <li> Underweight: BMI less than 18.5</li>
+                  <li>  Normal weight: BMI 18.5 - 24.9</li>
+                  <li>    Overweight: BMI 25 - 29.9Obese: BMI 30 or greater</li>
+                    </ul>
+                </p>
+                <p>
+                    
+                   <b> Limitations:</b>  While BMI is a widely used tool, it has limitations. It doesn't consider factors like muscle mass, bone density, and distribution of fat, which can vary among individuals. Therefore, it may not accurately reflect the health status of athletes, elderly people, or those with a muscular build.
+                </p>
+                   
+                    <p>
+                    <b>Usefulness:</b> BMI is useful for quickly identifying potential weight-related health risks. However, it's important to complement this assessment with other indicators, such as waist circumference and overall health evaluations, to get a more complete picture of an individual's well-being.
+                </p>
+                   
+                <p>
+                    <b>Conclusion: </b>BMI provides a simple way to estimate whether an individual's weight is within a healthy range based on their height. While it has its limitations, it's a useful tool when used in conjunction with other health assessments to make informed decisions about lifestyle and wellness.
+                </p>
+              
+            </div>
+            <div class="bmi_img">
+                <img src="images/bmi2.jpg" alt="">
             </div>
             
         </div>
+       
         
     </section>
     <!-- BMI Info End -->
@@ -244,16 +257,16 @@
             <form>
                 <input type="email" placeholder="Your Email Address" required>
                 <br>
-                <button type="submit">SUBSCRIBE NOW</button>
+                <button type="submit">SIGNUP NOW</button>
             </form>
             </div>
             <div class="col-3">
                 <h3>CONTACT</h3>
                 <p>Email: bmi@gmail.com</p>
                 <div class="social-icon">
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-solid fa-phone"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-regular fa-envelope" id="envelope"></i>
+                    <i class="fa-solid fa-phone" id="phone"></i>
+                    <i class="fa-brands fa-github" id="github"></i>
 
                 </div>
             </div>
