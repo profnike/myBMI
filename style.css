@@ -383,8 +383,6 @@ nav ul li:hover::after{
    align-items: center;
 }
 
-<<<<<<< HEAD
-=======
 #mobileNav{
     display: none ;
     padding: 10px 0px;
@@ -439,7 +437,6 @@ nav ul li:hover::after{
     
     
 }
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
 
 /* BMI Info */
 strong{
@@ -501,15 +498,12 @@ strong{
 .bmi_text{
     padding-top: 10px;
     font-size: 20px;
-<<<<<<< HEAD
     text-justify: distribute-all-lines;
     color: #999;
-=======
     text-align: start;
     text-align: justify;
     /* font-style: italic; */
     color: #333;
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
     bottom: 15px;
     left: 15px;
     width: 48%;
@@ -621,12 +615,9 @@ strong{
     }
 
     .bmi_img img{
-<<<<<<< HEAD
         margin-top: 30px;
         max-width: 480px;
-=======
         /* width: 450px !important; */
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
         height: inherit;
     }
 }
@@ -652,12 +643,9 @@ strong{
     }
 
     .bmi_img img{
-<<<<<<< HEAD
         margin-top: 30px;
         max-width: 580px;
-=======
         /* width: 500px!important; */
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
         height: inherit;
     }
 }
@@ -799,12 +787,9 @@ form button {
     }
 
     .bmi_img img{
-<<<<<<< HEAD
         margin-top: 30px;
         max-width: 780px;
-=======
         /* width: 700px !important; */
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
         height: inherit;
     }
 }
@@ -830,12 +815,9 @@ form button {
     }
 
     .bmi_img img{
-<<<<<<< HEAD
         margin-top: 30px;
         max-width: 100%;
-=======
         /* width: 750px !important; */
->>>>>>> 8c9f468e0187a06edc66234e898e0813269b7572
         height: inherit;
     }
 }
