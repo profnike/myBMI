@@ -9,11 +9,11 @@
 }
 body{
     font-family: 'DM Sans', sans-serif;
-   
+    
 }
 @media only screen and (max-width: 768px){
     html{
-        scroll-padding-top: var(--scroll-padding,40px) ;
+        scroll-padding-top: var(--scroll-padding,60px) ;
     }
 }
 
@@ -556,7 +556,6 @@ strong{
     
 }
 .bmi-section-inner{
-    margin: 40px 0px;
     background-color: white;
     width: 90%;
     height:85%;
@@ -897,16 +896,18 @@ form button:hover{
     }
     
     footer .col-1, footer .col-2, footer .col-3 {
-        padding: 20px 0; 
+        padding-top: 50px ; 
+        width: 100%;
     }
 
     form input {
-        max-width: 100%; 
+        /* max-width: 100%;  */
+        width: 70%;
     }
 
-    form button {
+    /* form button {
         width: 100%; 
-    }
+    } */
     .social-icon i {
         margin-top: 0px;
     }
@@ -922,7 +923,7 @@ form button:hover{
         margin-top: 15px;
     }
     footer div h3 {
-        font-weight: 300;
+        
         margin-bottom: 10px;
         letter-spacing: 1px;
     }
