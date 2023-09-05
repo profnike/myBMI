@@ -13,7 +13,7 @@ body{
 }
 @media only screen and (max-width: 768px){
     html{
-        scroll-padding-top: var(--scroll-padding,60px) ;
+        scroll-padding-top: var(--scroll-padding,70px) ;
     }
 }
 
@@ -138,6 +138,11 @@ nav ul li:hover::after{
     
 }
 /* Responsiveness for homepage */
+@media screen and (max-width:768px){
+    .header{
+        padding: 3% 8%;
+    }
+}
 @media (max-width:700px) {
     nav ul li{
         display: block;
@@ -150,11 +155,15 @@ nav ul li:hover::after{
         position: absolute;
         right: 0;
         top: 0;
+        padding: 120px 0;
+      
+        
     }
     nav ul{
         padding: 10px;
       
     }
+    
     .header h1{
         font-size: 2.0rem;
     }
@@ -195,15 +204,19 @@ strong{
 }
 
 #bmi_contect{
-   display: block;
-   justify-content: center;
-   margin: 0 auto;
-   padding-top: 40px;
-   /* padding-top: 90px; */
-   width: 90%;
-   
-   
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.bmi_contect_inner{
+    display: block;
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 90%;
+  
+ }
+
 
 .bmi_header{
     text-align: center;
@@ -419,6 +432,11 @@ strong{
     }
 }
 
+@media only screen and (max-width: 768px){
+    .bmi_contect_inner{
+        padding: 20px 0;
+    }
+}
 @media only screen and (max-width: 1024px){
     
     .bmi_section{
@@ -452,11 +470,7 @@ strong{
      .bmi_img img{
        max-width: 100% ;
      }
-     #bmi_contect{
-        margin: 0 auto;
-        margin-top: 20px;
-       
-     }
+
      .bmi_img{
         width: 100%;
     }
@@ -558,7 +572,8 @@ strong{
 .bmi-section-inner{
     background-color: white;
     width: 90%;
-    height:85%;
+    padding: 40px 0;
+    margin: 0;
    
 }
 .first-inner-section{
@@ -735,15 +750,15 @@ strong{
 .bmi-section h2{
     font-size: 28px;  
 }
-.bmi-section-inner{
-    margin: 20px 0px;
-   
-}
+
 }
 @media only screen and (max-width: 768px){
     .weight-conversion-inner-unit{
         width:100%;   
         
+    }
+    .bmi-section-inner{
+        padding: 20px 0;
     }
    
     .arrow-down-image{
@@ -905,9 +920,6 @@ form button:hover{
         width: 70%;
     }
 
-    /* form button {
-        width: 100%; 
-    } */
     .social-icon i {
         margin-top: 0px;
     }
