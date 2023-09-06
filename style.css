@@ -275,7 +275,9 @@ strong{
 .bmi_text p{
     padding-top: 5px;
 }
-
+.bmi_text li{
+    margin-left: 20px;
+}
 .bmi_img {
     position: relative;
     padding-bottom: 15px;
@@ -554,6 +556,9 @@ strong{
 @media only screen and (max-width: 768px){
     .newsletter-inner{
         width: 90%;
+    }
+    .newsletter h2{
+        font-size: 35px;
     }
 }
 
