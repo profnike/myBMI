@@ -23,7 +23,9 @@
 <body id="body">
     <section class="container">
         <!-- Header start -->
-        <div class="header" >
+        <div class="header">
+        <div class="inner-header" >
+            
             <h1>myBMI</h1>
             <nav id="navLinks">
                 <!-- <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i> -->
@@ -47,10 +49,16 @@
             <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
         </div>
         </div>
+        </div>
         <!-- Header end -->
         <!-- Content start -->
         <div class="content">
-            <p>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Odit, voluptatem?</p><br>
+            <p>Keep your fat in check by checking your <span>BODY MASS INDEX</span></p>
+            
+           <!-- <p>We must stop constantly talk about tackling obesity and warning people about the negative consequences of obesity
+            instead, we must be positive about the fun and benefits to be had from a healthy living,trying to get rid of people's
+             excuses for being obese by tackling the issue in a positive way.
+           </p> -->
             <a class="con-btn" href="#bmi-calculation">Check your BMI</a>
         </div>
         <!-- Content end -->
@@ -254,6 +262,8 @@
                 <div class="bmi-input-result" id="metercentimeterValue"  ></div>
             </div>
         </div>
+
+        <button  id="reset-input-field" onclick="resetValue()">Reset</button>
     </div>
         
         </div>
